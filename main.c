@@ -10,8 +10,8 @@ int main(){
     printf("\n===============================\n   Calculadora Simples\n===============================\nSelecione uma operação:\n1. Adição\n2. Subtração");
     printf("\n3. Multiplicação\n4. Divisão\n5. Sair\nOpção:");
     
-    scanf("%s", &x);
-    if(x!='1' || x!='2' || x!='3' || x!='4' || x!='5'){
+    scanf(" %c", &x);
+    if(x!='1' && x!='2' && x!='3' && x!='4' && x!='5'){
         printf("erro");
         i='s';
     }
@@ -74,7 +74,7 @@ int main(){
         scanf("%lf", &a);
         printf("Digite o segundo número: ");
         scanf("%lf", &b);
-        if(a!=0 || b!=0){
+        if(b>0){
         printf("Resultado: ");
         double c= a/b;
         printf("%lf / %lf = %lf", a, b, c);
